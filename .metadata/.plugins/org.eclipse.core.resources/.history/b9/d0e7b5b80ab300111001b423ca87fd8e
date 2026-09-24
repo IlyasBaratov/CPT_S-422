@@ -1,0 +1,49 @@
+package test.Quiz2;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MainTest {
+
+    @Test
+    void correctFunctionFindsCharacterAtBeginning() {
+        assertTrue(Quiz2.Main.containsCharacter("hello", 'h'));
+    }
+
+    @Test
+    void correctFunctionFindsCharacterInMiddle() {
+        assertTrue(Quiz2.Main.containsCharacter("hello", 'l'));
+    }
+
+    @Test
+    void correctFunctionFindsCharacterAtEnd() {
+        assertTrue(Quiz2.Main.containsCharacter("hello", 'o'));
+    }
+
+    @Test
+    void correctFunctionReturnsFalseWhenCharacterDoesNotExist() {
+        assertFalse(Main.containsCharacterCorrect("hello", 'z'));
+    }
+
+    @Test
+    void correctFunctionHandlesEmptyString() {
+        assertFalse(Quiz2.Main.containsCharacter("", 'a'));
+    }
+
+
+    @Test
+    void buggyFunctionFindsCharacterBeforeLastPosition() {
+        assertTrue(Quiz2.Main.containsCharacterBug("hello", 'h'));
+    }
+
+    @Test
+    void buggyFunctionReturnsFalseWhenCharacterDoesNotExist() {
+        assertFalse(Quiz2.Main.containsCharacterBug("hello", 'z'));
+    }
+
+    @Test
+    void buggyFunctionShouldFindCharacterAtLastPosition() {
+        assertTrue(Quiz2.Main.containsCharacterBug("hello", 'o'));
+    }
+}
