@@ -1,0 +1,12 @@
+# Eclipse workspace state (local caches, history, and UI preferences)
+/.metadata/
+
+# Java and Maven build output in workspace projects
+**/bin/
+**/target/
+*.class
+
+# Local Java tooling output
+*.log
+hs_err_pid*
+replay_pid*
