@@ -1,9 +1,12 @@
+package Quiz0;
+
 public class Date {
 
 	private int mm;
 	private int dd;
 	private int yyyy;
 	private int dayNumber;
+	@SuppressWarnings("unused")
 	private String dayName;
 	private String zodiacSign;
 

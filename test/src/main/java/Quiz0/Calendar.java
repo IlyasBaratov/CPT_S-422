@@ -1,3 +1,5 @@
+package Quiz0;
+
 import java.util.Scanner;
 
 public class Calendar {
