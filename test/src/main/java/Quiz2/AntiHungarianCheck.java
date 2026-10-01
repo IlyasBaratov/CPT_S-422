@@ -50,7 +50,7 @@ public class AntiHungarianCheck extends AbstractCheck {
     @Override
     public void finishTree(DetailAST rootAST) {
         log(rootAST.getLineNo(),
-                "AntiHungarian count is " + antiHungarianCount);
+                "AntiHungarian count is " + antiHungarianCount + " IB");
     }
 
     @Override

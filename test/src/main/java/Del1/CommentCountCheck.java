@@ -92,6 +92,6 @@ public class CommentCountCheck extends AbstractCheck {
      */
     @Override
     public void finishTree(DetailAST rootAST) {
-        log(rootAST.getLineNo(), MSG_COMMENT_COUNT + " is " + commentCount);
+        log(rootAST.getLineNo(), MSG_COMMENT_COUNT + " is " + commentCount + " IB");
     }
 }

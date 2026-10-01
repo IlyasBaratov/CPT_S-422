@@ -82,6 +82,6 @@ public class LoopCountCheck extends AbstractCheck {
      */
     @Override
     public void finishTree(DetailAST rootAST) {
-        log(rootAST.getLineNo(), MSG_LOOP_COUNT + " is " + loopCount);
+        log(rootAST.getLineNo(), MSG_LOOP_COUNT + " is " + loopCount + " IB");
     }
 }
